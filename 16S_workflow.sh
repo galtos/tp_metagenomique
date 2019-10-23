@@ -10,7 +10,6 @@ mkdir $dossier_sortie/amplicon
 touch $dossier_sortie/amplicon/amplicon.fasta
 gunzip $dossier_reads_bruts/*.fastq.gz
 
-flag=1
 for file in $(ls $dossier_reads_bruts/*_R1.fastq);do
     echo $file
     file_R1=$file
