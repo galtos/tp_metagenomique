@@ -3,7 +3,6 @@ dossier_reads_bruts=$1
 dossier_sortie=$2
 
 mkdir $dossier_sortie
-mkdir $dossier_sortie
 mkdir $dossier_sortie/Vsearch_output
 mkdir $dossier_sortie/Alientrimmer_output
 mkdir $dossier_sortie/amplicon
