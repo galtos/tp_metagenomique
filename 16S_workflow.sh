@@ -39,8 +39,9 @@ vsearch --cluster_size $dossier_sortie/amplicon/amplicon_nochimeras.fasta --otut
 
 vsearch --usearch_global $dossier_sortie/amplicon/amplicon.fasta --db $dossier_sortie/amplicon/centroids.fasta --otutabout $dossier_sortie/amplicon/amplicon_table_abondance.fasta --id 0.97
 
-vsearch --usearch_global $dossier_sortie/amplicon/centroids.fasta --db databases/mock_16S_18S.fasta --id 0.97 --top_hits_only --userfields "query+target" --userout $dossier_sortie/amplicon/annotation.txt
+vsearch --usearch_global $dossier_sortie/amplicon/centroids.fasta --db databases/mock_16S_18S.fasta --id 0.90 --top_hits_only --userfields "query+target" --userout $dossier_sortie/amplicon/annotation.txt
 
+sed '1iOTU\tAnnotation' -i $dossier_sortie/amplicon/annotation.txt
 
 
 
